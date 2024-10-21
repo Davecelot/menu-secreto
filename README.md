@@ -15,6 +15,6 @@ Esta página está construida para las cátedras de Desarrollo II y Programació
 ## ¿Quiénes participan?
 
 * Mauro Ancona.
-* Azul Trejo.
+* Azul Trejomovich.
 * Sofi Suton.
 * Diego Villarroel.
