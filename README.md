@@ -16,5 +16,5 @@ Esta página está construida para las cátedras de Desarrollo II y Programació
 
 * Mauro Ancona.
 * Azul Trejomovich.
-* Sofi Suton.
+* Sofia Suton.
 * Diego Villarroel.
