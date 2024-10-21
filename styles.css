@@ -13,6 +13,10 @@ html {
     font-size: 16px;
 }
 
+body {
+    color: var(--black) !important;
+}
+
 :root {
     /* COLOR VARIABLES */
     --red: #d84116;
@@ -22,4 +26,24 @@ html {
     --black: #061018;
     --gray: #f2f2f2;
     --white: #fcfcfc;
+}
+
+.bg-white {
+    background-color: var(--white) !important;
+}
+
+/* --- !! NAVBAR STYLES !! --- */
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.bg-navbar {
+    background-color: var(--white) !important;
+}
+
+/* --- !! HEADER STYLES !! --- */
+
+header {
+    margin-top: 6rem;
 }
