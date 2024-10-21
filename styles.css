@@ -1,0 +1,18 @@
+/* --- !! UNIVERSAL STYLES !! --- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* COLOR VARIABLES */
+    --red: #d84116;
+    --blue: #216196;
+    --yellow: #f5c741;
+    --sky: #85cee4;
+    --black: #061018;
+    --gray: #f2f2f2;
+    --white: #fcfcfc;
+}
