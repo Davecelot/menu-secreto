@@ -42,8 +42,18 @@ body {
     background-color: var(--white) !important;
 }
 
+.navbar-nav .nav-link.active {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--red);
+    opacity: 0.8;
+}
+
 /* --- !! HEADER STYLES !! --- */
 
 header {
-    margin-top: 6rem;
+    margin-top: 7rem;
 }
