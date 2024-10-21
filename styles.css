@@ -6,6 +6,13 @@
     padding: 0;
 }
 
+html {
+    /* FONT FAMILY */
+    font-family:  "Rubik", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
 :root {
     /* COLOR VARIABLES */
     --red: #d84116;
