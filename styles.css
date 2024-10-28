@@ -1,16 +1,9 @@
 /* --- !! UNIVERSAL STYLES !! --- */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 html {
     /* FONT FAMILY */
     font-family:  "Rubik", serif;
     font-weight: 400;
-    font-size: 16px;
 }
 
 body {
