@@ -50,3 +50,7 @@ body {
 header {
     margin-top: 7rem;
 }
+
+header .item {
+    background-color: var(--red) !important;
+}
