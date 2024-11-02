@@ -2,7 +2,7 @@
 
 html {
     /* FONT FAMILY */
-    font-family:  "Rubik", serif;
+    font-family: "Rubik", serif;
     font-weight: 400;
 }
 
@@ -29,11 +29,15 @@ body {
     background-color: var(--white) !important;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Orelega One", serif;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
     font-family: "Averia Libre", system-ui;
 }
 
@@ -52,7 +56,8 @@ h4, h5, h6 {
     font-weight: 500;
 }
 
-.nav-link:focus, .nav-link:hover {
+.nav-link:focus,
+.nav-link:hover {
     color: var(--red);
     opacity: 0.8;
 }
@@ -77,22 +82,15 @@ header .item {
 /* --- !! PATTERN DIVIDER STYLES !! --- */
 
 .pattern-divider {
-    width: 100%;
-    overflow: hidden;
-    height: 30vw;
+    background-image: url(../imgs/Pattern\ Frolly.svg);
+    min-height: 25vw;
+    max-width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top: solid var(--red) 4px;
     border-bottom: solid var(--red) 4px;
-}
-
-.pattern-divider img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.pattern-divider figure {
-    width: 100%;
 }
 
 /* --- !! FOOTER STYLES !! --- */
@@ -101,7 +99,8 @@ footer .nav-link {
     color: var(--black) !important;
 }
 
-footer .nav-link:focus, .nav-link:hover {
+footer .nav-link:focus,
+.nav-link:hover {
     color: var(--red) !important;
     opacity: 0.8;
 }
