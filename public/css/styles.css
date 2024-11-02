@@ -25,6 +25,14 @@ body {
     background-color: var(--white) !important;
 }
 
+h1, h2, h3 {
+    font-family: "Orelega One", serif;
+}
+
+h4, h5, h6 {
+    font-family: "Averia Libre", system-ui;
+}
+
 /* --- !! NAVBAR STYLES !! --- */
 
 .navbar-brand img {
@@ -54,4 +62,21 @@ header {
 header .item {
     background-color: var(--red) !important;
     height: 70vh;
+}
+
+/* --- !! CTA SECTION STYLES !! --- */
+
+.cta-section {
+    background-color: var(--gray);
+}
+
+/* --- !! FOOTER STYLES !! --- */
+
+footer .nav-link {
+    color: var(--black) !important;
+}
+
+footer .nav-link:focus, .nav-link:hover {
+    color: var(--red) !important;
+    opacity: 0.8;
 }
