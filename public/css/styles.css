@@ -53,4 +53,5 @@ header {
 
 header .item {
     background-color: var(--red) !important;
+    height: 70vh;
 }

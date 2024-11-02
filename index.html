@@ -53,7 +53,8 @@
 
   <!-- Main Start -->
   <main>
-    <header class="container">
+    <!-- Header Start -->
+    <header class="container-fluid">
       <!-- Carousel with Owl Carousel Start -->
       <div class="row">
         <div class="col-12">
@@ -77,6 +78,24 @@
       </div>
       <!-- Carousel with Owl Carousel End -->
     </header>
+    <!-- Header End -->
+
+    <!-- CTA Section Start -->
+    <section class="mt-5 container">
+      <div class="row">
+        <!-- Block -->
+        <div class="col-lg-6">
+          <h2>Este sería el título de la sección.</h2>
+          <p>Acá iría un breve texto que por ahora rellenamos con lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus possimus provident dolore eligendi earum, soluta voluptate voluptatibus blanditiis. Voluptatum exercitationem minus omnis magnam placeat accusantium natus consequatur ab. Unde.</p>
+        </div>
+
+        <!-- Block -->
+        <div class="col-lg-6">
+          <p>AAAA</p>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section End -->
   </main>
   <!-- Main End -->
 
@@ -101,11 +120,11 @@
       loop: true,
       margin: 32,
       autoplay: true,
-      autoplayTimeout: 3200, /* 3200 */
+      autoplayTimeout: 2800, /* 2800 */
       autoplayHoverPause: true
     });
     $('.play').on('click', function () {
-      owl.trigger('play.owl.autoplay', [3200])
+      owl.trigger('play.owl.autoplay', [2800])
     })
     $('.stop').on('click', function () {
       owl.trigger('stop.owl.autoplay')
