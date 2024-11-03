@@ -14,6 +14,10 @@ body {
     text-wrap: balance;
 }
 
+.body-secondary {
+    color: var(--carbon);
+}
+
 :root {
     /* COLOR VARIABLES */
     --red: #d84116;
@@ -21,6 +25,7 @@ body {
     --yellow: #f5c741;
     --sky: #85cee4;
     --black: #061018;
+    --carbon: #1d2327;
     --gray: #f2f2f2;
     --white: #fcfcfc;
 }
