@@ -90,9 +90,11 @@ header .item {
 }
 
 header .item img {
+    min-height: 20vh;
     width: 100%;
-    height: 30vw;
     object-fit: cover;
+    -o-object-fit: cover;
+    vertical-align: middle;
 }
 
 /* --- !! CTA SECTION STYLES !! --- */
