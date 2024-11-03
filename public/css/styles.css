@@ -87,12 +87,11 @@ header {
 
 header .item {
     background-color: var(--red) !important;
-    height: 70vh;
 }
 
 header .item img {
     width: 100%;
-    height: 100%;
+    height: 30vw;
     object-fit: cover;
 }
 
