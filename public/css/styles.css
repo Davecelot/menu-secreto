@@ -29,6 +29,8 @@ body {
     background-color: var(--white) !important;
 }
 
+/* --- !! H's SYTLES !! --- */
+
 h1,
 h2,
 h3 {
@@ -39,6 +41,11 @@ h4,
 h5,
 h6 {
     font-family: "Averia Libre", system-ui;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 100%;
 }
 
 /* --- !! NAVBAR STYLES !! --- */
@@ -89,8 +96,14 @@ header .item {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top: solid var(--red) 4px;
-    border-bottom: solid var(--red) 4px;
+    border-top: solid var(--blue) 4px;
+    border-bottom: solid var(--blue) 4px;
+}
+
+/* --- !! PRODUCT GRID STYLES !! --- */
+
+.product-grid .col {
+    background-color: var(--red);
 }
 
 /* --- !! FOOTER STYLES !! --- */
@@ -103,4 +116,9 @@ footer .nav-link:focus,
 .nav-link:hover {
     color: var(--red) !important;
     opacity: 0.8;
+}
+
+footer img {
+    width: 40%;
+    height: 44px;
 }
