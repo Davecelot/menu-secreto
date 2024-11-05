@@ -40,6 +40,7 @@ h1,
 h2,
 h3 {
     font-family: "Orelega One", serif;
+    line-height: 100% !important;
 }
 
 h4,
@@ -48,14 +49,37 @@ h6 {
     font-family: "Averia Libre", system-ui;
 }
 
-h2 {
-    font-size: 3rem;
-    line-height: 100%;
+/* --- !! BUTTON STYLE !! --- */
+
+/* Default state */
+.btn-primary {
+    background-color: var(--red) !important; /* Primary color from design */
+    border: none !important; /* Remove border */
+    color: white !important; /* White text color */
+    font-family: 'Rubik', sans-serif; /* Ensures Rubik font */
+    font-weight: 500; /* Medium weight for better readability */
+    padding: 0.75rem 2rem; /* Padding for a balanced button size */
+    border-radius: 50px; /* Creates rounded edges */
+    transition: background-color 0.3s ease; /* Smooth transition for state changes */
 }
 
-h3 {
-    font-size: 2rem;
-    line-height: 100%;
+/* Hover state */
+.btn-primary:hover {
+    background-color: #b53813 !important; /* Darker shade for hover feedback */
+}
+
+/* Focus state */
+.btn-primary:focus {
+    background-color: var(--red) !important; /* Keeps background color on focus */
+    outline: none !important; /* Remove default focus outline */
+    box-shadow: 0 0 0 0.2rem rgba(216, 65, 22, 0.5) !important; /* Custom shadow for focus indication */
+}
+
+/* Active state */
+.btn-primary:active {
+    background-color: #a63010 !important; /* Even darker shade for active feedback */
+    box-shadow: none !important; /* Removes shadow when actively pressed */
+    transform: scale(0.98); /* Slightly reduces size for active press effect */
 }
 
 /* --- !! NAVBAR STYLES !! --- */
