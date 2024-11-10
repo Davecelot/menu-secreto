@@ -4,7 +4,7 @@
       "nombreProducto": "Hamburguesa Clásica",
       "precio": 8.50,
       "descripcion": "Hamburguesa con carne, queso, lechuga y tomate.",
-      "imagen": "img/hamburguesa-clasica.jpg"
+      "imagen": "public/imgs/ham-cebolla.webp"
     },
     {
       "idProducto": 2,
@@ -18,21 +18,21 @@
       "nombreProducto": "Hamburguesa de Pollo",
       "precio": 8.00,
       "descripcion": "Hamburguesa con pechuga de pollo crujiente, lechuga y mayonesa.",
-      "imagen": "img/hamburguesa-pollo.jpg"
+      "imagen": "public/imgs/ham-pollo.webp"
     },
     {
       "idProducto": 4,
       "nombreProducto": "Hamburguesa Vegana",
       "precio": 9.00,
       "descripcion": "Hamburguesa con base de vegetales y aguacate.",
-      "imagen": "img/hamburguesa-vegana.jpg"
+      "imagen": "public/imgs/ham-vegana.webp"
     },
     {
       "idProducto": 5,
       "nombreProducto": "Hamburguesa Doble Queso",
       "precio": 10.00,
       "descripcion": "Doble porción de carne y doble queso.",
-      "imagen": "img/hamburguesa-doble-queso.jpg"
+      "imagen": "public/imgs/ham-doble-queso.webp"
     },
     {
       "idProducto": 6,
@@ -60,7 +60,7 @@
       "nombreProducto": "Hamburguesa de Champiñones",
       "precio": 9.25,
       "descripcion": "Con champiñones salteados y queso suizo.",
-      "imagen": "img/hamburguesa-champinones.jpg"
+      "imagen": "public/imgs/ham-champi.webp"
     },
     {
       "idProducto": 10,
