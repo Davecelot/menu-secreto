@@ -1,227 +1,345 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frolly</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="#" />
+    <!-- Bootstrap Linked -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <link rel="stylesheet" href="public/css/index.css" />
+    <!-- Google Fonts (Orelega One, Averia Libre, Rubik)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Orelega+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="public/css/owl-carousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="public/css/owl-carousel/owl.theme.default.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frolly</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="#">
-  <!-- Bootstrap Linked -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Our CSS -->
-  <link rel="stylesheet" href="public/css/styles.css">
-  <link rel="stylesheet" href="public/css/index.css">
-  <!-- Google Fonts (Orelega One, Averia Libre, Rubik)-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Orelega+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="public/css/owl-carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="public/css/owl-carousel/owl.theme.default.min.css">
-</head>
-
-<body class="bg-white">
-  <!-- Body Start -->
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-navbar fixed-top py-4">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <figure><img src="public/imgs/logo-frolly.svg" alt="Logo de Frolly."></figure>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link active" href="index.html">Inicio</a>
-          <a class="nav-link" href="#">Sobre Frolly</a>
-          <a class="nav-link" href="products.html">Productos</a>
-          <a class="nav-link" href="#">Contacto</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- Navbar End -->
-
-  <!-- Main Start -->
-  <main>
-    <!-- Header Start -->
-    <header class="img-fluid mb-lg-5">
-      <!-- Carousel with Owl Carousel Start -->
-      <div class="row">
-        <div class="col-12">
-          <div class="owl-carousel owl-theme">
-            <!-- 1 -->
-            <div class="item">
-              <figure><img src="public/imgs/slider-1.webp" alt="Imagen promocional de Frolly que te redirige a la sección de productos."></figure>
-            </div>
-
-            <!-- 2 -->
-            <div class="item">
-              <figure><img src="public/imgs/slider-2.webp" alt="Imagen promocional de Frolly con fines marketineros."></figure>
-            </div>
-
-            <!-- 3 -->
-            <div class="item">
-              <figure><img src="public/imgs/slider-3.webp" alt="Imagen promocional de Frolly que te redirige a la sección de productos."></figure>
-            </div>
+  <body class="bg-white">
+    <!-- Body Start -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-navbar fixed-top py-4">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <figure>
+            <img src="public/imgs/logo-frolly.svg" alt="Logo de Frolly." />
+          </figure>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="index.html">Inicio</a>
+            <a class="nav-link" href="#">Sobre Frolly</a>
+            <a class="nav-link" href="products.html">Productos</a>
+            <a class="nav-link" href="#">Contacto</a>
           </div>
         </div>
       </div>
-      <!-- Carousel with Owl Carousel End -->
-    </header>
-    <!-- Header End -->
+    </nav>
+    <!-- Navbar End -->
 
-    <!-- CTA Section Start -->
-    <section class="cta-section container p-5 rounded">
-      <div class="row g-5">
-        <!-- Block -->
-        <div class="col-lg-6 text-balance">
-          <h2 class="display-3">Encuentra el sabor y la diversión.</h2>
-          <p class="body-secondary">Descubre una experiencia única donde cada bocado está lleno de nostalgia y alegría. En Frolly, reinventamos la forma de disfrutar hamburguesas, combinando lo clásico con un toque moderno y un espíritu juguetón. Sumérgete en el sabor y en el ambiente que hace de cada visita algo especial.</p>
-          <div class="col text-balance"><a href="#" class="btn btn-primary">Ver productos</a></div>
+    <!-- Main Start -->
+    <main>
+      <!-- Header Start -->
+      <header class="img-fluid mb-lg-5">
+        <!-- Carousel with Owl Carousel Start -->
+        <div class="row">
+          <div class="col-12">
+            <div class="owl-carousel owl-theme">
+              <!-- 1 -->
+              <div class="item">
+                <figure>
+                  <img
+                    src="public/imgs/slider-1.webp"
+                    alt="Imagen promocional de Frolly que te redirige a la sección de productos."
+                  />
+                </figure>
+              </div>
+
+              <!-- 2 -->
+              <div class="item">
+                <figure>
+                  <img
+                    src="public/imgs/slider-2.webp"
+                    alt="Imagen promocional de Frolly con fines marketineros."
+                  />
+                </figure>
+              </div>
+
+              <!-- 3 -->
+              <div class="item">
+                <figure>
+                  <img
+                    src="public/imgs/slider-3.webp"
+                    alt="Imagen promocional de Frolly que te redirige a la sección de productos."
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Carousel with Owl Carousel End -->
+      </header>
+      <!-- Header End -->
 
-        <!-- Block -->
-        <div class="col-lg-6">
-          <figure><img src="public/imgs/section-callout-image.webp" alt="" class="w-100 rounded img-behavior-right"></figure>
+      <!-- CTA Section Start -->
+      <section class="cta-section container p-5 rounded">
+        <div class="row g-5">
+          <!-- Block -->
+          <div class="col-lg-6 text-balance">
+            <h2 class="display-3">Encuentra el sabor y la diversión.</h2>
+            <p class="body-secondary">
+              Descubre una experiencia única donde cada bocado está lleno de
+              nostalgia y alegría. En Frolly, reinventamos la forma de disfrutar
+              hamburguesas, combinando lo clásico con un toque moderno y un
+              espíritu juguetón. Sumérgete en el sabor y en el ambiente que hace
+              de cada visita algo especial.
+            </p>
+            <div class="col text-balance">
+              <a href="#" class="btn btn-primary">Ver productos</a>
+            </div>
+          </div>
+
+          <!-- Block -->
+          <div class="col-lg-6">
+            <figure>
+              <img
+                src="public/imgs/section-callout-image.webp"
+                alt=""
+                class="w-100 rounded img-behavior-right"
+              />
+            </figure>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- CTA Section End -->
+      </section>
+      <!-- CTA Section End -->
 
-    <!-- Pattern Divider Start -->
-    <!-- <div class="pattern-divider container mt-5 mb-5 rounded">
+      <!-- Pattern Divider Start -->
+      <!-- <div class="pattern-divider container mt-5 mb-5 rounded">
     </div> -->
-    <!-- Pattern Divider End -->
+      <!-- Pattern Divider End -->
 
-    <!-- Highlighted Products Start -->
-    <section class="container">
-      <div class="row">
-        <div class="col text-lg-center text-balance">
-          <h2 class="mb-5 display-3">Los recomendados de Frolly</h2>
+      <!-- Highlighted Products Start -->
+      <section class="container">
+        <div class="row">
+          <div class="col text-lg-center text-balance">
+            <h2 class="mb-5 display-3">Los recomendados de Frolly</h2>
+          </div>
         </div>
-      </div>
 
-      <!-- Product Grid Start -->
-      <div class="product-grid row row-cols-1 row-cols-lg-3">
-        <div class="col">1</div>
-        <div class="col">2</div>
-        <div class="col">3</div>
-        <div class="col">4</div>
-        <div class="col">5</div>
-        <div class="col">6</div>
-      </div>
-      <!-- Product Grid End -->
-    </section>
-    <!-- Highlighted Products End -->
-
-    <!-- Informative Section Start -->
-    <section class="container">
-      <div class="row">
-        <!-- Title -->
-        <div class="col text-balance text-lg-center mb-5">
-          <h2 class="display-3">Frolly just wanna' have fun!</h2>
+        <!-- Product Grid Start -->
+        <div class="product-grid row row-cols-1 row-cols-lg-3">
+          <div class="col">1</div>
+          <div class="col">2</div>
+          <div class="col">3</div>
+          <div class="col">4</div>
+          <div class="col">5</div>
+          <div class="col">6</div>
         </div>
-      </div>
-      <div class="row row-cols-1 row-cols-lg-3 text-balance text-lg-center g-5 mb-4">
-        <div class="col">
-          <figure><img src="public/imgs/logo-frolly.svg" alt="Prueba."></figure>
-          <h3>Título del bloque de contenido</h3>
-          <p class="body-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate sapiente nulla sunt modi soluta id
-            illo, earum vero a reprehenderit quia exercitationem, natus pariatur rerum obcaecati magnam quos minima, aut
-            repudiandae aliquam molestiae voluptatibus. Quibusdam, voluptatum? Porro, nemo? Quisquam, deserunt!</p>
+        <!-- Product Grid End -->
+      </section>
+      <!-- Highlighted Products End -->
+
+      <!-- Informative Section Start -->
+      <section class="container">
+        <div class="row">
+          <!-- Title -->
+          <div class="col text-balance text-lg-center mb-5">
+            <h2 class="display-3">Frolly just wanna' have fun!</h2>
+          </div>
         </div>
-        <div class="col">
-          <figure><img src="public/imgs/logo-frolly.svg" alt="Prueba."></figure>
-          <h3>Título del bloque de contenido</h3>
-          <p class="body-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate sapiente nulla sunt modi soluta id
-            illo, earum vero a reprehenderit quia exercitationem, natus pariatur rerum obcaecati magnam quos minima, aut
-            repudiandae aliquam molestiae voluptatibus. Quibusdam, voluptatum? Porro, nemo? Quisquam, deserunt!</p>
+        <div
+          class="row row-cols-1 row-cols-lg-3 text-balance text-lg-center g-5 mb-4"
+        >
+          <div class="col">
+            <figure>
+              <img src="public/imgs/logo-frolly.svg" alt="Prueba." />
+            </figure>
+            <h3>Título del bloque de contenido</h3>
+            <p class="body-secondary">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate sapiente nulla sunt modi soluta id illo, earum vero a
+              reprehenderit quia exercitationem, natus pariatur rerum obcaecati
+              magnam quos minima, aut repudiandae aliquam molestiae
+              voluptatibus. Quibusdam, voluptatum? Porro, nemo? Quisquam,
+              deserunt!
+            </p>
+          </div>
+          <div class="col">
+            <figure>
+              <img src="public/imgs/logo-frolly.svg" alt="Prueba." />
+            </figure>
+            <h3>Título del bloque de contenido</h3>
+            <p class="body-secondary">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate sapiente nulla sunt modi soluta id illo, earum vero a
+              reprehenderit quia exercitationem, natus pariatur rerum obcaecati
+              magnam quos minima, aut repudiandae aliquam molestiae
+              voluptatibus. Quibusdam, voluptatum? Porro, nemo? Quisquam,
+              deserunt!
+            </p>
+          </div>
+          <div class="col">
+            <figure>
+              <img src="public/imgs/logo-frolly.svg" alt="Prueba." />
+            </figure>
+            <h3>Título del bloque de contenido</h3>
+            <p class="body-secondary">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate sapiente nulla sunt modi soluta id illo, earum vero a
+              reprehenderit quia exercitationem, natus pariatur rerum obcaecati
+              magnam quos minima, aut repudiandae aliquam molestiae
+              voluptatibus. Quibusdam, voluptatum? Porro, nemo? Quisquam,
+              deserunt!
+            </p>
+          </div>
         </div>
-        <div class="col">
-          <figure><img src="public/imgs/logo-frolly.svg" alt="Prueba."></figure>
-          <h3>Título del bloque de contenido</h3>
-          <p class="body-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate sapiente nulla sunt modi soluta id
-            illo, earum vero a reprehenderit quia exercitationem, natus pariatur rerum obcaecati magnam quos minima, aut
-            repudiandae aliquam molestiae voluptatibus. Quibusdam, voluptatum? Porro, nemo? Quisquam, deserunt!</p>
+        <!-- CTA -->
+        <div class="row">
+          <div class="col text-balance text-lg-center">
+            <a class="btn btn-primary" href="#" type="button">Ver productos</a>
+          </div>
         </div>
-      </div>
-      <!-- CTA -->
-      <div class="row">
-        <div class="col text-balance text-lg-center"><a class="btn btn-primary" href="#" type="button">Ver productos</a></div>
-      </div>
-    </section>
-    <!-- Informative Section End -->
+      </section>
+      <!-- Informative Section End -->
 
-    <!-- Testimonials Start -->
-     <section class="container">
-      <div class="row mb-3">
-        <div class="col text-balance text-lg-center">
-          <h2 class="display-3">¿Qué dicen de Frolly?</h2>
-          <h4 class="body-secondary">La gente cool come en Frolly y opina, los demás solo comen</h4>
+      <!-- Testimonials Start -->
+      <section class="container">
+        <div class="row mb-5">
+          <div class="col text-balance text-lg-center">
+            <h2 class="display-3">¿Qué dicen de Frolly?</h2>
+            <h4 class="body-secondary">
+              La gente cool come en Frolly y opina, los demás solo comen
+            </h4>
+          </div>
+          <div class="row text-center g-4 h-100">
+            <!-- Tarjetas de testimonios -->
+            <div class="col-12 col-lg-4">
+              <div class="testimonial-card">
+                <p>
+                  "Excelente servicio y atención. ¡Totalmente recomendable!"
+                </p>
+                <h5>- María García</h5>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="testimonial-card">
+                <p>"Una experiencia única. Volveré sin duda alguna."</p>
+                <h5>- Guillermo Dávila</h5>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="testimonial-card">
+                <p>
+                  "Calidad y precio inmejorables. Mis expectativas fueron
+                  superadas."
+                </p>
+                <h5>- María Guadalupe</h5>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-     </section>
-    <!-- Testimonials End -->
-  </main>
-  <!-- Main End -->
+      </section>
+      <!-- Testimonials End -->
+    </main>
+    <!-- Main End -->
 
-  <!-- Footer Start -->
-  <div class="container mt-5">
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2">Inicio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2">Sobre Frolly</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2">Productos</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2">Contacto</a></li>
-      </ul>
-      <figure class="text-center"><img src="public/imgs/logo-frolly.svg" alt="Logo de Frolly."></figure>
-    </footer>
-  </div>
-  <!-- Footer End -->
+    <!-- Footer Start -->
+    <div class="container mt-5">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2">Inicio</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2">Sobre Frolly</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2">Contacto</a>
+          </li>
+        </ul>
+        <figure class="text-center">
+          <img src="public/imgs/logo-frolly.svg" alt="Logo de Frolly." />
+        </figure>
+      </footer>
+    </div>
+    <!-- Footer End -->
 
-  <!-- Scripts !!!! -->
-  <!-- Bootstrap JS Start -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <!-- Bootstrap JS End -->
-  <!-- jQuery Start -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <!-- jQuery End -->
+    <!-- Scripts !!!! -->
+    <!-- Bootstrap JS Start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS End -->
+    <!-- jQuery Start -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery End -->
+    <!-- Testimonials Script -->
+    <script src="public/js/testimonials.js"></script>
 
-  <!-- Owl Carousel Start -->
-  <script src="public/js/owl-carousel/owl.carousel.js"></script>
-  <script src="public/js/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Owl Carousel Start -->
+    <script src="public/js/owl-carousel/owl.carousel.js"></script>
+    <script src="public/js/owl-carousel/owl.carousel.min.js"></script>
 
-  <script>
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      items: 1,
-      loop: true,
-      margin: 32,
-      autoplay: true,
-      autoplayTimeout: 2400, /* 2400 */
-      autoplayHoverPause: true
-    });
-    $('.play').on('click', function () {
-      owl.trigger('play.owl.autoplay', [2400])
-    })
-    $('.stop').on('click', function () {
-      owl.trigger('stop.owl.autoplay')
-    })
-  </script>
-  <!-- Owl Carousel End -->
-  <!-- Body End -->
-</body>
-
+    <script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 32,
+        autoplay: true,
+        autoplayTimeout: 2400 /* 2400 */,
+        autoplayHoverPause: true,
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [2400]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+    </script>
+    <!-- Owl Carousel End -->
+    <!-- Body End -->
+  </body>
 </html>

@@ -44,3 +44,35 @@ header .item img {
 .product-grid .col {
   height: 224px;
 }
+
+/* --- !! TESTIMONIALS SECTION STYLES !! --- */
+
+.testimonials {
+  background-color: #f9f9f9;
+}
+
+.testimonial-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-card h5 {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
