@@ -19,7 +19,11 @@ header .item img {
   width: 100%;
   object-fit: cover;
   -o-object-fit: cover;
-  vertical-align: middle;
+  display: block;
+}
+
+header .row {
+  margin-right: 0 !important;
 }
 
 /* --- !! CTA SECTION STYLES !! --- */
@@ -34,7 +38,7 @@ header .item img {
   width: 100%;
   object-fit: contain;
   -o-object-fit: contain;
-  height: 30vw;
+  height: 252px;
 }
 
 /* --- !! PATTERN DIVIDER STYLES !! ---

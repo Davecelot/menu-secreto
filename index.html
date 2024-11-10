@@ -78,7 +78,7 @@
       <header class="img-fluid mb-lg-5">
         <!-- Carousel with Owl Carousel Start -->
         <div class="row">
-          <div class="col-12">
+          <div class="col">
             <div class="owl-carousel owl-theme">
               <!-- 1 -->
               <div class="item">
@@ -130,7 +130,9 @@
               de cada visita algo especial.
             </p>
             <div class="col text-balance">
-              <a href="products.html" class="btn btn-primary" type="button">Ver productos</a>
+              <a href="products.html" class="btn btn-primary" type="button"
+                >Ver productos</a
+              >
             </div>
           </div>
 
@@ -187,36 +189,53 @@
         >
           <div class="col">
             <figure>
-              <img class="info-img-resizing" src="public/imgs/frolly-burger.svg" alt="" />
+              <img
+                class="info-img-resizing"
+                src="public/imgs/frolly-burger.svg"
+                alt=""
+              />
             </figure>
             <h3>Calidad que se siente</h3>
             <p class="body-secondary">
-              Cada hamburguesa está hecha con ingredientes frescos y sabores auténticos. Siente la diferencia en cada bocado.
+              Cada hamburguesa está hecha con ingredientes frescos y sabores
+              auténticos. Siente la diferencia en cada bocado.
             </p>
           </div>
           <div class="col">
             <figure>
-              <img class="info-img-resizing" src="public/imgs/city-frolly.webp" alt="" />
+              <img
+                class="info-img-resizing"
+                src="public/imgs/city-frolly.webp"
+                alt=""
+              />
             </figure>
             <h3>Experiencia única</h3>
             <p class="body-secondary">
-              No solo es comida; es diversión. Vive un ambiente retro-moderno pensado para que cada visita sea memorable.
+              No solo es comida; es diversión. Vive un ambiente retro-moderno
+              pensado para que cada visita sea memorable.
             </p>
           </div>
           <div class="col">
             <figure>
-              <img class="info-img-resizing" src="public/imgs/frolly-reloj.webp" alt="" />
+              <img
+                class="info-img-resizing"
+                src="public/imgs/frolly-reloj.webp"
+                alt=""
+              />
             </figure>
             <h3>Rápido y delicioso</h3>
             <p class="body-secondary">
-              Sabemos que el tiempo es oro. Disfruta de un servicio rápido sin comprometer el sabor o la calidad.
+              Sabemos que el tiempo es oro. Disfruta de un servicio rápido sin
+              comprometer el sabor o la calidad.
             </p>
           </div>
         </div>
         <!-- CTA -->
         <div class="row">
           <div class="col text-balance text-lg-center">
-            <a class="btn btn-primary" href="products.html" type="button">Ver productos</a>
+            <a class="btn btn-primary" href="products.html" type="button"
+              >Ver productos</a
+            >
           </div>
         </div>
       </section>
@@ -320,9 +339,13 @@
       $(".play").on("click", function () {
         owl.trigger("play.owl.autoplay", [2400]);
       });
-      $(".stop").on("click", function () {
-        owl.trigger("stop.owl.autoplay");
-      });
+      $(".stop")
+        .on("click", function () {
+          owl.trigger("stop.owl.autoplay");
+        })
+        .on("resized.owl.carousel", function () {
+          $(this).find(".owl-stage").css("width", "100%");
+        });
     </script>
     <!-- Owl Carousel End -->
     <!-- Body End -->
