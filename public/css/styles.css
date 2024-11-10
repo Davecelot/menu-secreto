@@ -194,60 +194,19 @@ h6 {
   opacity: 0.8;
 }
 
-/* --- !! HEADER STYLES !! --- */
-
-header {
-  margin-top: 7rem;
-}
-
-header .item {
-  background-color: var(--red) !important;
-}
-
-header .item img {
-  min-height: 20vh;
-  width: 100%;
-  object-fit: cover;
-  -o-object-fit: cover;
-  vertical-align: middle;
-}
-
-/* --- !! CTA SECTION STYLES !! --- */
-
-.cta-section {
-  background-color: var(--gray);
-}
-
-/* --- !! PATTERN DIVIDER STYLES !! ---
-
-.pattern-divider {
-  background-image: url(../imgs/Pattern\ Frolly.svg);
-  min-height: 25vw;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-/* --- !! PRODUCT GRID STYLES !! --- */
-
-.product-grid .col {
-    height: 224px;
-}
-
-/* --- !! FOOTER STYLES !! --- */
-
-footer .nav-link {
-  color: var(--black) !important;
-}
-
-footer .nav-link:focus,
-.nav-link:hover {
-  color: var(--red) !important;
-  opacity: 0.8;
-}
-
-footer img {
-  width: 40%;
-  height: 44px;
-}
+  /* --- !! FOOTER STYLES !! --- */
+  
+  footer .nav-link {
+    color: var(--black) !important;
+  }
+  
+  footer .nav-link:focus,
+  .nav-link:hover {
+    color: var(--red) !important;
+    opacity: 0.8;
+  }
+  
+  footer img {
+    width: 40%;
+    height: 44px;
+  }
