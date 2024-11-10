@@ -79,22 +79,41 @@
           <!-- Product List -->
           <div class="col-12 col-lg-8">
             <div class="content-header mb-3">
-                <h2 class="text-balance display-5">¿Qué comer en Frolly?</h2>
-                <p class="fs-5">¿Ya sabes qué vas a llevar? Encuentra la hamburguesa que más llame a tu paladar.</p>
+              <h2 class="text-balance display-5">¿Qué comer en Frolly?</h2>
+              <p class="fs-5">
+                ¿Ya sabes qué vas a llevar? Encuentra la hamburguesa que más
+                llame a tu paladar.
+              </p>
             </div>
             <div id="product-list" class="row"></div>
           </div>
 
           <!-- Shopping Cart -->
+          <!-- Cart Column (4 columns) -->
           <div class="col-12 col-lg-4">
-            <h2 class="text-balance mb-3 display-5">Carrito</h2>
-            <div id="cart" class="card p-3">
-              <div id="cart-items" class="list-group"></div>
-              <div class="text-end mt-3">
-                <strong>Total: $<span id="total-price">0.00</span></strong>
+            <div class="position-sticky" style="top: 252px">
+              <h3>Shopping Cart</h3>
+              <div id="cart-items" class="list-group mb-3">
+                <!-- Cart items or empty state message will render here dynamically -->
               </div>
+              <div class="d-flex justify-content-between mb-3">
+                <strong>Total:</strong>
+                <span id="total-price">$0.00</span>
+              </div>
+              <!-- Purchase button -->
+              <button onclick="purchaseItems()" class="btn btn-success w-100">
+                Comprar
+              </button>
             </div>
           </div>
+        </div>
+        <!-- Success alert for purchase confirmation -->
+        <div
+          id="purchase-alert"
+          class="alert alert-success position-fixed end-0 top-0 m-3 d-none"
+          role="alert"
+        >
+          ¡Gracias por comprar en Frolly! Ahora solo queda esperar que la diversión llegue a ti.
         </div>
       </div>
     </main>

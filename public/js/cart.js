@@ -112,8 +112,31 @@ function renderCart() {
     document.getElementById('total-price').innerText = total.toFixed(2);
 }
 
+/**
+ * Function to simulate purchase and show confirmation alert.
+ */
+function purchaseItems() {
+  if (cart.length === 0) {
+      alert("El carrito de compras está vacío. ¿Qué te parece si lo llenas de alegría?");
+      return;
+  }
+
+  // Clear the cart after purchase
+  cart = [];
+  renderCart();
+
+  // Show confirmation alert
+  const purchaseAlert = document.getElementById('purchase-alert');
+  purchaseAlert.classList.remove('d-none'); // Make alert visible
+
+  // Hide the alert after 3 seconds
+  setTimeout(() => {
+      purchaseAlert.classList.add('d-none'); // Hide alert
+  }, 3000);
+}
+
 // Fetch products and initialize empty state in cart on page load
 document.addEventListener('DOMContentLoaded', () => {
-    fetchProducts();
-    renderCart(); // Ensure empty state is shown initially
+  fetchProducts();
+  renderCart(); // Ensure empty state is shown initially
 });

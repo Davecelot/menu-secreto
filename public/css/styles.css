@@ -173,6 +173,39 @@ h6 {
   transform: scale(0.98); /* Adds press effect */
 }
 
+/* Overwriting Bootstrap's .btn-success styles to match custom button style */
+
+/* Default state */
+.btn-success {
+  background-color: #198754 !important; /* Default Bootstrap success color */
+  border: none !important; /* Remove border */
+  color: white !important; /* White text color for contrast */
+  font-family: 'Rubik', sans-serif; /* Ensures Rubik font */
+  font-weight: 500; /* Medium weight for consistency */
+  padding: 0.5rem 1rem; /* Consistent padding */
+  border-radius: 50px; /* Rounded edges like other buttons */
+  transition: background-color 0.3s ease; /* Smooth transition for state changes */
+}
+
+/* Hover state */
+.btn-success:hover {
+  background-color: #146c43 !important; /* Slightly darker shade for hover feedback */
+}
+
+/* Focus state */
+.btn-success:focus {
+  background-color: #198754 !important; /* Keeps background color on focus */
+  outline: none !important; /* Remove default focus outline */
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.5) !important; /* Custom shadow for focus indication */
+}
+
+/* Active state */
+.btn-success:active {
+  background-color: #0f5132 !important; /* Even darker shade for active feedback */
+  box-shadow: none !important; /* Removes shadow when actively pressed */
+  transform: scale(0.98); /* Adds press effect */
+}
+
 /* --- !! NAVBAR STYLES !! --- */
 
 .navbar-brand img {

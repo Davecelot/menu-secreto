@@ -16,3 +16,18 @@ main {
 .list-group {
     border: none !important;
 }
+
+/* Style for the alert to appear at the top right on larger screens */
+#purchase-alert {
+    z-index: 1050; /* Higher than most elements for visibility */
+    max-width: 300px;
+}
+
+/* Center the alert on smaller screens */
+@media (max-width: 576px) {
+    #purchase-alert {
+        left: 50%;
+        transform: translateX(-55%);
+        width: 100%;
+    }
+}
