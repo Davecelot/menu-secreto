@@ -36,11 +36,13 @@ function renderProducts() {
       product.nombreProducto
     }">
                 <div class="card-body">
-                    <h5 class="card-title">${product.nombreProducto}</h5>
-                    <p class="card-text">${product.descripcion}</p>
-                    <p class="card-text"><strong>Precio:</strong> $${product.precio.toFixed(
-                      2
-                    )}</p>
+                    <div class="card-content">
+                      <h5 class="card-title">${product.nombreProducto}</h5>
+                      <p class="card-text">${product.descripcion}</p>
+                      <p class="card-text"><strong>Precio:</strong> $${product.precio.toFixed(
+                        2
+                      )}</p>
+                    </div>
                     <button onclick="addToCart(${
                       product.idProducto
                     })" class="btn btn-secondary">Añadir al carrito</button>

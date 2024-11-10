@@ -17,6 +17,28 @@ main {
     border: none !important;
 }
 
+.card-img-top {
+    width: 100%;
+    object-fit: contain;
+    -o-object-fit: contain;
+    padding: 1rem;
+    height: 45%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: space-between;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 1rem;
+}
+
 /* Style for the alert to appear at the top right on larger screens */
 #purchase-alert {
     z-index: 1050; /* Higher than most elements for visibility */
