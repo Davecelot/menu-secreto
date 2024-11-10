@@ -39,7 +39,7 @@
       "nombreProducto": "Hamburguesa de Tocino",
       "precio": 9.75,
       "descripcion": "Hamburguesa con carne, queso y tocino crujiente.",
-      "imagen": "img/hamburguesa-tocino.jpg"
+      "imagen": "public/imgs/ham-doble-carne.webp"
     },
     {
       "idProducto": 7,
@@ -67,6 +67,6 @@
       "nombreProducto": "Hamburguesa Picante",
       "precio": 10.75,
       "descripcion": "Con salsa picante, jalapeños y queso pepper jack.",
-      "imagen": "img/hamburguesa-picante.jpg"
+      "imagen": "public/imgs/ham-picante.webp"
     }
   ]
