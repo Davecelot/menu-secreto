@@ -11,7 +11,7 @@
       "nombreProducto": "Hamburguesa BBQ",
       "precio": 9.50,
       "descripcion": "Hamburguesa con salsa BBQ, cebolla crujiente y queso cheddar.",
-      "imagen": "img/hamburguesa-bbq.jpg"
+      "imagen": "public/imgs/ham-bbq.webp"
     },
     {
       "idProducto": 3,
@@ -46,14 +46,14 @@
       "nombreProducto": "Hamburguesa Mexicana",
       "precio": 10.50,
       "descripcion": "Con jalapeños, guacamole y queso cheddar.",
-      "imagen": "img/hamburguesa-mexicana.jpg"
+      "imagen": "public/imgs/ham-picante.webp"
     },
     {
       "idProducto": 8,
       "nombreProducto": "Hamburguesa Italiana",
       "precio": 10.25,
       "descripcion": "Con mozzarella, tomate y albahaca.",
-      "imagen": "img/hamburguesa-italiana.jpg"
+      "imagen": "public/imgs/ham-italiana.webp"
     },
     {
       "idProducto": 9,
