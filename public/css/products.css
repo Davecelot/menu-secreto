@@ -1,0 +1,18 @@
+/* --- !! MAIN STYLES !! --- */
+
+main {
+    margin: 7rem 0rem 3rem 0rem;
+}
+
+/* --- !! CONTENT HEADER STYLES !! --- */
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- !! CARD STYLES !! --- */
+
+.list-group {
+    border: none !important;
+}
