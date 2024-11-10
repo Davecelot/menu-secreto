@@ -4,6 +4,13 @@ main {
     margin: 7rem 0rem 3rem 0rem;
 }
 
+/* --- !! PAGE HEADER STYLES !! --- */
+
+.page-header {
+    background-color: var(--red);
+    color: var(--white);
+}
+
 /* --- !! CONTENT HEADER STYLES !! --- */
 
 .content-header {
