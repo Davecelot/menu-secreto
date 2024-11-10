@@ -82,6 +82,109 @@ h6 {
     transform: scale(0.98); /* Slightly reduces size for active press effect */
 }
 
+/* Overwriting Bootstrap's .btn-secondary styles to create an outlined version */
+
+/* Default state */
+.btn-secondary {
+    background-color: transparent !important; /* Transparent background for outlined style */
+    border: 2px solid var(--red) !important; /* Border in primary color */
+    color: var(--red) !important; /* Text color matching border */
+    font-family: 'Rubik', sans-serif; /* Ensures Rubik font */
+    font-weight: 500; /* Medium weight for readability */
+    padding: 0.5rem 1rem; /* Consistent padding */
+    border-radius: 50px; /* Rounded edges like primary button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Hover state */
+.btn-secondary:hover {
+    background-color: var(--red) !important; /* Fills background with primary color */
+    color: white !important; /* Changes text to white for contrast */
+}
+
+/* Focus state */
+.btn-secondary:focus {
+    background-color: transparent !important; /* Keeps background transparent on focus */
+    color: var(--red) !important; /* Text color remains primary */
+    outline: none !important; /* Remove default focus outline */
+    box-shadow: 0 0 0 0.2rem rgba(216, 65, 22, 0.5) !important; /* Custom shadow for focus indication */
+}
+
+/* Active state */
+.btn-secondary:active {
+    background-color: #b53813 !important; /* Darker shade for active press feedback */
+    color: white !important; /* White text for contrast */
+    box-shadow: none !important; /* Removes shadow when actively pressed */
+    transform: scale(0.98); /* Adds press effect */
+}
+
+/* Overwriting Bootstrap's .btn-danger styles to match custom button style */
+
+/* Default state */
+.btn-danger {
+    background-color: #dc3545 !important; /* Default Bootstrap danger color */
+    border: none !important; /* Remove border */
+    color: white !important; /* White text for contrast */
+    font-family: 'Rubik', sans-serif; /* Ensures Rubik font */
+    font-weight: 500; /* Medium weight for consistency */
+    padding: 0.5rem 1rem; /* Consistent padding */
+    border-radius: 50px; /* Rounded edges like other buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for state changes */
+}
+
+/* Hover state */
+.btn-danger:hover {
+    background-color: #bb2d3b !important; /* Slightly darker shade for hover feedback */
+}
+
+/* Focus state */
+.btn-danger:focus {
+    background-color: #dc3545 !important; /* Keeps background color on focus */
+    outline: none !important; /* Remove default focus outline */
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5) !important; /* Custom shadow for focus indication */
+}
+
+/* Active state */
+.btn-danger:active {
+    background-color: #a71d2a !important; /* Even darker shade for active feedback */
+    box-shadow: none !important; /* Removes shadow when actively pressed */
+    transform: scale(0.98); /* Adds press effect */
+}
+
+/* Overwriting Bootstrap's .btn-info styles to match custom button style with green color */
+
+/* Default state */
+.btn-info {
+    background-color: #198754 !important; /* Using the green color from btn-success */
+    border: none !important; /* Remove border */
+    color: white !important; /* White text for contrast */
+    font-family: 'Rubik', sans-serif; /* Ensures Rubik font */
+    font-weight: 500; /* Medium weight for consistency */
+    padding: 0.5rem 1rem; /* Consistent padding */
+    border-radius: 50px; /* Rounded edges like other buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for state changes */
+}
+
+/* Hover state */
+.btn-info:hover {
+    background-color: #146c43 !important; /* Slightly darker shade for hover feedback */
+}
+
+/* Focus state */
+.btn-info:focus {
+    background-color: #198754 !important; /* Keeps background color on focus */
+    outline: none !important; /* Remove default focus outline */
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.5) !important; /* Custom shadow for focus indication */
+}
+
+/* Active state */
+.btn-info:active {
+    background-color: #0f5132 !important; /* Even darker shade for active feedback */
+    box-shadow: none !important; /* Removes shadow when actively pressed */
+    transform: scale(0.98); /* Adds press effect */
+}
+
+
 /* --- !! NAVBAR STYLES !! --- */
 
 .navbar-brand img {
@@ -137,6 +240,27 @@ header .item img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* --- !! PAGE PRODUCTS.HTML - PRODUCTS SECTION !! --- */
+
+.products-section {
+    margin-top: 7rem;
+}
+
+.cart-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.sc-cart-empty-msg, .sc-cart-summary, .sc-cart-toolbar {
+    text-align: left !important;
+}
+
+.sc-cart-toolbar {
+    display: flex;
+    
+}
+
 
 /* --- !! FOOTER STYLES !! --- */
 

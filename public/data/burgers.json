@@ -1,0 +1,72 @@
+[
+    {
+      "idProducto": 1,
+      "nombreProducto": "Hamburguesa Clásica",
+      "precio": 8.50,
+      "descripcion": "Hamburguesa con carne, queso, lechuga y tomate.",
+      "imagen": "img/hamburguesa-clasica.jpg"
+    },
+    {
+      "idProducto": 2,
+      "nombreProducto": "Hamburguesa BBQ",
+      "precio": 9.50,
+      "descripcion": "Hamburguesa con salsa BBQ, cebolla crujiente y queso cheddar.",
+      "imagen": "img/hamburguesa-bbq.jpg"
+    },
+    {
+      "idProducto": 3,
+      "nombreProducto": "Hamburguesa de Pollo",
+      "precio": 8.00,
+      "descripcion": "Hamburguesa con pechuga de pollo crujiente, lechuga y mayonesa.",
+      "imagen": "img/hamburguesa-pollo.jpg"
+    },
+    {
+      "idProducto": 4,
+      "nombreProducto": "Hamburguesa Vegana",
+      "precio": 9.00,
+      "descripcion": "Hamburguesa con base de vegetales y aguacate.",
+      "imagen": "img/hamburguesa-vegana.jpg"
+    },
+    {
+      "idProducto": 5,
+      "nombreProducto": "Hamburguesa Doble Queso",
+      "precio": 10.00,
+      "descripcion": "Doble porción de carne y doble queso.",
+      "imagen": "img/hamburguesa-doble-queso.jpg"
+    },
+    {
+      "idProducto": 6,
+      "nombreProducto": "Hamburguesa de Tocino",
+      "precio": 9.75,
+      "descripcion": "Hamburguesa con carne, queso y tocino crujiente.",
+      "imagen": "img/hamburguesa-tocino.jpg"
+    },
+    {
+      "idProducto": 7,
+      "nombreProducto": "Hamburguesa Mexicana",
+      "precio": 10.50,
+      "descripcion": "Con jalapeños, guacamole y queso cheddar.",
+      "imagen": "img/hamburguesa-mexicana.jpg"
+    },
+    {
+      "idProducto": 8,
+      "nombreProducto": "Hamburguesa Italiana",
+      "precio": 10.25,
+      "descripcion": "Con mozzarella, tomate y albahaca.",
+      "imagen": "img/hamburguesa-italiana.jpg"
+    },
+    {
+      "idProducto": 9,
+      "nombreProducto": "Hamburguesa de Champiñones",
+      "precio": 9.25,
+      "descripcion": "Con champiñones salteados y queso suizo.",
+      "imagen": "img/hamburguesa-champinones.jpg"
+    },
+    {
+      "idProducto": 10,
+      "nombreProducto": "Hamburguesa Picante",
+      "precio": 10.75,
+      "descripcion": "Con salsa picante, jalapeños y queso pepper jack.",
+      "imagen": "img/hamburguesa-picante.jpg"
+    }
+  ]
