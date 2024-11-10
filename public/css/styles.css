@@ -247,21 +247,6 @@ header .item img {
     margin-top: 7rem;
 }
 
-.cart-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.sc-cart-empty-msg, .sc-cart-summary, .sc-cart-toolbar {
-    text-align: left !important;
-}
-
-.sc-cart-toolbar {
-    display: flex;
-    
-}
-
-
 /* --- !! FOOTER STYLES !! --- */
 
 footer .nav-link {
