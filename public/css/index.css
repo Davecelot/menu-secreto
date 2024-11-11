@@ -15,7 +15,7 @@ header .item {
 }
 
 header .item img {
-  min-height: 20vh;
+  min-height: 20vw;
   width: 100%;
   object-fit: cover;
   -o-object-fit: cover;
