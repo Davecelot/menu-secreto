@@ -1,0 +1,54 @@
+header {
+    margin-top: 7rem;
+    background-color: var(--yellow);
+  }
+
+  /* --- !! COLLAPSIBLES STYLES !! --- */
+
+  .faq-category h3 {
+    font-weight: bold;
+  }
+  
+  .faq-item {
+    background-color: var(--white);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .faq-item.active {
+    color: var(--white);
+    background-color: var(--red);
+  }
+  
+  .faq-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-content {
+    display: none;
+    padding: 0rem 1rem 1rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .faq-item.active .icon {
+    transform: rotate(45deg);
+  }
+  
+  .faq-item.active .faq-content {
+    display: block;
+  }
+  
