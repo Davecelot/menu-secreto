@@ -60,3 +60,15 @@ main {
         width: 100%;
     }
 }
+
+/* --- !! CART STYLES !! --- */
+
+.item-in-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.item-in-cart button {
+    width: fit-content;
+}

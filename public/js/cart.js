@@ -32,20 +32,18 @@ function renderProducts() {
     productCard.className = "col-lg-6 mb-4";
     productCard.innerHTML = `
             <div class="card h-100">
-                <img src="${product.imagen}" class="card-img-top" alt="${
-      product.nombreProducto
-    }">
+                <img src="${product.imagen}" class="card-img-top" alt="${product.nombreProducto
+      }">
                 <div class="card-body">
                     <div class="card-content">
                       <h5 class="card-title">${product.nombreProducto}</h5>
                       <p class="card-text">${product.descripcion}</p>
                       <p class="card-text"><strong>Precio:</strong> $${product.precio.toFixed(
-                        2
-                      )}</p>
+        2
+      )}</p>
                     </div>
-                    <button onclick="addToCart(${
-                      product.idProducto
-                    })" class="btn btn-secondary">Añadir al carrito</button>
+                    <button onclick="addToCart(${product.idProducto
+      })" class="btn btn-secondary">Añadir al carrito</button>
                 </div>
             </div>
         `;
@@ -82,36 +80,38 @@ function removeFromCart(id) {
  * Function to render cart items and calculate total price.
  */
 function renderCart() {
-    const cartItems = document.getElementById('cart-items');
-    cartItems.innerHTML = ''; // Clear existing cart items
-    let total = 0;
+  const cartItems = document.getElementById('cart-items');
+  cartItems.innerHTML = ''; // Clear existing cart items
+  let total = 0;
 
-    if (cart.length === 0) {
-        // Show empty state message if cart is empty
-        cartItems.innerHTML = `
+  if (cart.length === 0) {
+    // Show empty state message if cart is empty
+    cartItems.innerHTML = `
             <div class="text-center py-4">
                 <p class="mb-0">Aún no has sumado nada al carrito. ¿Qué esperas para disfrutar de una hamburguesa única?</p>
             </div>
         `;
-    } else {
-        // Render each item in the cart
-        cart.forEach(item => {
-            const cartItem = document.createElement('div');
-            cartItem.className = 'list-group-item d-flex justify-content-between align-items-center';
-            cartItem.innerHTML = `
-                <div>
-                    <strong>${item.nombreProducto}</strong> x${item.quantity} 
-                    <button onclick="removeFromCart(${item.idProducto})" class="btn btn-sm btn-danger ms-3">Eliminar</button>
+  } else {
+    // Render each item in the cart
+    cart.forEach(item => {
+      const cartItem = document.createElement('div');
+      cartItem.className = 'list-group-item d-flex justify-content-between';
+      cartItem.innerHTML = `
+                <div class="item-in-cart">
+                    <div class="content-in-cart">
+                      <p><strong>${item.nombreProducto}</strong> (x${item.quantity})</p>
+                    </div> 
+                    <button onclick="removeFromCart(${item.idProducto})" class="btn btn-sm btn-danger">Eliminar</button>
                 </div>
                 <span>$${(item.precio * item.quantity).toFixed(2)}</span>
             `;
-            cartItems.appendChild(cartItem);
-            total += item.precio * item.quantity;
-        });
-    }
+      cartItems.appendChild(cartItem);
+      total += item.precio * item.quantity;
+    });
+  }
 
-    // Update total price in the UI
-    document.getElementById('total-price').innerText = total.toFixed(2);
+  // Update total price in the UI
+  document.getElementById('total-price').innerText = total.toFixed(2);
 }
 
 /**
@@ -119,8 +119,8 @@ function renderCart() {
  */
 function purchaseItems() {
   if (cart.length === 0) {
-      alert("El carrito de compras está vacío. ¿Qué te parece si lo llenas de alegría?");
-      return;
+    alert("El carrito de compras está vacío. ¿Qué te parece si lo llenas de alegría?");
+    return;
   }
 
   // Clear the cart after purchase
@@ -133,7 +133,7 @@ function purchaseItems() {
 
   // Hide the alert after 3 seconds
   setTimeout(() => {
-      purchaseAlert.classList.add('d-none'); // Hide alert
+    purchaseAlert.classList.add('d-none'); // Hide alert
   }, 3000);
 }
 
