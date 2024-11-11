@@ -38,6 +38,9 @@
       rel="stylesheet"
       href="public/css/owl-carousel/owl.theme.default.min.css"
     />
+    <!-- Floating WhatsApp CSS -->
+    <link rel="stylesheet" href="public/css/floating-wpp.css" />
+    <link rel="stylesheet" href="public/css/floating-wpp.min.css" />
   </head>
 
   <body>
@@ -161,6 +164,10 @@
     </div>
     <!-- Footer End -->
 
+    <!-- Floating WhatsApp Start -->
+    <div class="floating-wpp"></div>
+    <!-- Floating WhatsApp End -->
+
     <!-- Scripts !! -->
     <!-- Bootstrap JS Start -->
     <script
@@ -178,5 +185,24 @@
     <!-- jQuery End -->
     <!-- Cart Logic JS -->
     <script src="public/js/cart.js"></script>
+
+    <!-- Floating WhatsApp Scripts -->
+    <script src="public/js/floating-wpp.js"></script>
+    <script src="public/js/floating-wpp.min.js"></script>
+    <!-- Floating WhatsApp Start -->
+    <script>
+      $(document).ready(function () {
+        $(".floating-wpp").floatingWhatsApp({
+          phone: "+541133707420", // Número de teléfono.
+          popupMessage: "Frolly está en línea. ¿Con qué necesitas ayuda?", // Mensaje emergente.
+          showPopup: true, // Muestra el mensaje emergente.
+          position: "right", // Posición del botón.
+          size: "60px", // Tamaño del botón.
+          message: "¡Hola! ¿Cómo hago mi pedido?", // Mensaje inicial.
+          backgroundColor: "#25D366", // Color del botón.
+        });
+      });
+    </script>
+    <!-- Floating WhatsApp End -->
   </body>
 </html>
