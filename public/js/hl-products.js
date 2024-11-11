@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         2
                       )}</p>
                     </div>
-                    <a href="products.html" class="btn btn-secondary">Ver producto</a>
+                    <a href="products.html" class="btn btn-secondary">Ir al carrito</a>
                 </div>
             </div>
           `;
