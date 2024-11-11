@@ -1,0 +1,108 @@
+/* --- !! MARGIN CUSTOM !! --- */
+
+.mt-custom {
+  margin-top: 100px; /* O el valor que necesites */
+}
+
+/* --- !! HEADER STYLES !! --- */
+
+header {
+  margin-top: 7rem;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* --- !! SECTION STYLES !! --- */
+
+section {
+  margin: 3rem 0rem 3rem 0rem;
+}
+
+/* --- !! ABOUT US STYLES !! --- */
+.quienesSomos {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/*card taylor swift approved*/
+.card-punteada {
+  border-style: dotted; /* Bordes punteados */
+  border-width: 10px; /* Grosor de los bordes */
+  border-color: #d84116; /* Color de los bordes, usa el color que prefieras */
+}
+
+.card-punteada img {
+  position: absolute; /* La imagen se posiciona fuera de la card */
+  top: -120px; /* Ajusta este valor para mover la imagen hacia arriba */
+  right: -70px; /* Ajusta este valor para mover la imagen hacia la derecha */
+  width: 120px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.card-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  margin-top: 20px;
+}
+
+/* Tablet (768px y arriba)*/
+@media (min-width: 768px) {
+  .card-punteada img {
+    width: 160px; /* Imagen un poco más pequeña */
+    top: -120px;
+    right: -80px;
+  }
+
+  .quienesSomos .row {
+    /* Asegura que la imagen y el texto estén alineados correctamente */
+    display: flex;
+    align-items: center;
+  }
+
+  /* Para que la imagen esté a la izquierda y el texto a la derecha */
+  .quienesSomos .col-md-6:first-child {
+    order: 1; /* Imagen a la izquierda */
+  }
+
+  .quienesSomos .col-md-6:last-child {
+    order: 2; /* Texto a la derecha */
+  }
+
+  .especiales .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .especiales .col-md-6:first-child {
+    order: 1; /* Texto a la izquierda */
+  }
+
+  .especiales .col-md-6:last-child {
+    order: 2; /* Imagen a la derecha */
+  }
+}
+
+/* --- !! Desktop (992px y arriba) --- */
+@media (min-width: 992px) {
+  .quienesSomos .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .quienesSomos .col-md-6 {
+    flex: 0 0 48%; /* Asegura que las columnas ocupen casi el 50% */
+  }
+
+  .especiales .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .especiales .col-md-6 {
+    flex: 0 0 48%; /* Lo mismo para las secciones de 'Especiales' */
+  }
+}
