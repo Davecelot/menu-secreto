@@ -123,7 +123,7 @@
 
       <!-- CTA Section Start -->
       <section class="cta-section container p-5 rounded">
-        <div class="row g-5">
+        <div class="row gy-5 gx-lg-5">
           <!-- Block -->
           <div class="col-lg-6 text-balance">
             <h2 class="display-3">Encuentra el sabor y la diversión</h2>
@@ -142,7 +142,7 @@
           </div>
 
           <!-- Block -->
-          <div class="col-lg-6">
+          <div class="col-12 col-lg-6">
             <figure>
               <img
                 src="public/imgs/section-callout-image.webp"
@@ -245,9 +245,9 @@
 
       <!-- CTA Section Start -->
       <section class="cta-section container p-5 rounded">
-        <div class="row g-5">
+        <div class="row gy-5 gx-lg-5">
           <!-- Block -->
-          <div class="col-lg-6">
+          <div class="col-12 col-lg-6">
             <figure>
               <img
                 src="public/imgs/cta-2-img.webp"
@@ -401,21 +401,11 @@
         owl.owlCarousel({
           items: 1,
           loop: true,
-          margin: 32,
+          margin: 0,
           autoplay: true,
           autoplayTimeout: 2400 /* 2400 */,
           autoplayHoverPause: true,
         });
-        $(".play").on("click", function () {
-          owl.trigger("play.owl.autoplay", [2400]);
-        });
-        $(".stop")
-          .on("click", function () {
-            owl.trigger("stop.owl.autoplay");
-          })
-          .on("resized.owl.carousel", function () {
-            $(this).find(".owl-stage").css("width", "100%");
-          });
     </script>
     <!-- Owl Carousel End -->
     <!-- Body End -->
