@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Contacto</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="public/imgs/logo-frolly.svg">
+  <!-- Bootstrap Linked -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="public/css/contact.css">
+  <!-- Google Fonts (Orelega One, Averia Libre, Rubik) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Orelega+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-navbar fixed-top py-4">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <figure>
+          <img src="public/imgs/logo-frolly.svg" alt="Logo de Frolly." />
+        </figure>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="index.html">Inicio</a>
+          <a class="nav-link" href="about-us.html">Sobre Frolly</a>
+          <a class="nav-link" href="products.html">Productos</a>
+          <a class="nav-link" href="faqs.html">Preguntas Frecuentes</a>
+          <a class="nav-link active" href="contact.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Header Start -->
+  <header class="container page-header py-5 rounded">
+    <h1 class="text-balance text-center display-2 py-5">Charla con nosotros</h1>
+  </header>
+  <!-- Header End -->
+
+  <div class="container my-5">
+    <div class="row">
+      <!-- Sección de contacto -->
+      <section class="contact-section py-5 body-secondary ">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Formulario de contacto -->
+            <div class="col-md-6">
+              <h2 class="mb-4">Contáctanos</h2>
+              <p class="mb-4">Tu opinión y consultas son muy importantes para nosotros. Si deseas saber más sobre
+                nuestros servicios o tienes alguna inquietud, completa el formulario y nos pondremos en contacto
+                contigo a la brevedad</p>
+
+              <!-- Formulario usando clases de Bootstrap -->
+              <form id="contactForm" onsubmit="event.preventDefault(); mostrarConfirmacion();">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nombre Completo</label>
+                  <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje"
+                    required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+              </form>
+            </div>
+
+            <!-- Información de contacto usando clases de Bootstrap -->
+            <div class="col-md-6">
+              <h4 class="mt-4">Escríbenos</h4>
+              <p><a href="mailto:frolly@frollyconsultas.com"
+                  class="text-decoration-none text-primary">frolly@frollyconsultas.com</a></p>
+
+              <h4>Llámanos</h4>
+              <p><a href="tel:+1140888223" class="text-decoration-none text-primary">1140888223</a></p>
+
+              <h4>Visítanos</h4>
+              <p><a
+                  href="https://www.google.com/maps/place/Av.+Juan+Bautista+Justo+739,+C1414+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5793829,-58.4276302,17z/data=!4m15!1m8!3m7!1s0x95bcb12c26ad1a33:0x13e2cb7689a7dc64!2sItalia,+Provincia+de+Buenos+Aires!3b1!8m2!3d-34.5305168!4d-58.5082188!16s%2Fg%2F1tgffk53!3m5!1s0x95bcb59a9190c1ff:0x19c85d135a430162!8m2!3d-34.5792138!4d-58.4278806!16s%2Fg%2F11c4l4f_v1?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
+                  class="text-decoration-none text-primary">Av. Juan Bautista Justo 739, C1414 Cdad. Autónoma
+                  de Buenos Aires</a></p>
+
+              <h4>Síguenos</h4>
+              <div>
+                <a href="#" class="me-3"><i class="bi bi-twitter text-primary"></i></a>
+                <a href="#" class="me-3"><i class="bi bi-facebook text-primary"></i></a>
+                <a href="#"><i class="bi bi-instagram text-primary"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal de Confirmación -->
+      <div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="confirmacionModalLabel">Mensaje Enviado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>¡Tu mensaje ha sido enviado con éxito! Gracias por tomarte el tiempo para contactarnos. Nuestro equipo
+                revisará tu consulta y se pondrá en contacto contigo pronto.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-primary" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.9795933680125!2d-58.4276302!3d-34.5793829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59a9190c1ff%3A0x19c85d135a430162!2sAv.%20Juan%20Bautista%20Justo%20739%2C%20C1414%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1731293063246!5m2!1sen!2sar"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Footer Start -->
+      <div class="container mt-5">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-2">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="about-us.html" class="nav-link px-2">Sobre Frolly</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link px-2">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a href="faqs.html" class="nav-link px-2">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link px-2">Contacto</a>
+            </li>
+          </ul>
+          <figure class="text-center">
+            <img src="public/imgs/logo-frolly.svg" alt="Logo de Frolly." />
+          </figure>
+        </footer>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Scripts !! -->
+      <!-- Bootstrap JS Bundle -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Script para mostrar el modal de confirmación -->
+      <script>
+        // Función que muestra el modal de confirmación al enviar el formulario
+        function mostrarConfirmacion() {
+          // Muestra el modal utilizando Bootstrap
+          var modal = new bootstrap.Modal(document.getElementById('confirmacionModal'));
+          modal.show();
+        }
+      </script>
+
+</body>
+
+</html>
