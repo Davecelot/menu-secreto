@@ -52,7 +52,63 @@ header .row, header .item {
     background-size: cover;
   } */
 
-/* --- !! PRODUCT GRID STYLES !! --- */
+/* --- !! HIGHLIGHTED SECTION STYLES !! --- */
+
+#featured-products .product-card {
+  background-color: #fff;
+  border: 2px solid #ff6347;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+#featured-products .product-card:hover {
+  transform: scale(1.05);
+}
+
+#featured-products .product-image img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ff6347;
+}
+
+#featured-products .product-title {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#featured-products .product-price {
+  color: #ff6347;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+/* --- !! CARD STYLES !! --- */
+
+.card-img-top {
+  width: 100%;
+  object-fit: contain;
+  -o-object-fit: contain;
+  padding: 1rem;
+  height: 45%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-between;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1rem;
+}
 
 /* --- !! TESTIMONIALS SECTION STYLES !! --- */
 
