@@ -8,6 +8,7 @@ html {
 
 body {
   color: var(--black) !important;
+  overflow-x: hidden;
 }
 
 .text-balance {

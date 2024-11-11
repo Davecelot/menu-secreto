@@ -267,7 +267,9 @@
               seguir ofreciendo momentos inolvidables.
             </p>
             <div class="col text-balance">
-              <a href="contact.html" class="btn btn-primary" type="button">Contactar</a>
+              <a href="contact.html" class="btn btn-primary" type="button"
+                >Contactar</a
+              >
             </div>
           </div>
         </div>
@@ -385,9 +387,6 @@
     ></script>
     <!-- jQuery End -->
 
-    <!-- Highlighted Products Carrousel Script -->
-    <script src="public/js/random-products.js"></script>
-
     <!-- Testimonials Script -->
     <script src="public/js/testimonials.js"></script>
 
@@ -396,25 +395,25 @@
     <script src="public/js/owl-carousel/owl.carousel.min.js"></script>
 
     <script>
-      var owl = $(".owl-carousel");
-      owl.owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 32,
-        autoplay: true,
-        autoplayTimeout: 2400 /* 2400 */,
-        autoplayHoverPause: true,
-      });
-      $(".play").on("click", function () {
-        owl.trigger("play.owl.autoplay", [2400]);
-      });
-      $(".stop")
-        .on("click", function () {
-          owl.trigger("stop.owl.autoplay");
-        })
-        .on("resized.owl.carousel", function () {
-          $(this).find(".owl-stage").css("width", "100%");
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+          items: 1,
+          loop: true,
+          margin: 32,
+          autoplay: true,
+          autoplayTimeout: 2400 /* 2400 */,
+          autoplayHoverPause: true,
         });
+        $(".play").on("click", function () {
+          owl.trigger("play.owl.autoplay", [2400]);
+        });
+        $(".stop")
+          .on("click", function () {
+            owl.trigger("stop.owl.autoplay");
+          })
+          .on("resized.owl.carousel", function () {
+            $(this).find(".owl-stage").css("width", "100%");
+          });
     </script>
     <!-- Owl Carousel End -->
     <!-- Body End -->

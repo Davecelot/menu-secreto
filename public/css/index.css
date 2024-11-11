@@ -22,7 +22,7 @@ header .item img {
   display: block;
 }
 
-header .row {
+header .row, header .item {
   margin-right: 0 !important;
 }
 
