@@ -25,28 +25,12 @@ function fetchProducts() {
  */
 function renderProducts() {
   const productList = document.getElementById("product-list");
-  productList.innerHTML = ""; // Clear existing products
+  productList.replaceChildren();
 
   products.forEach((product) => {
     const productCard = document.createElement("div");
     productCard.className = "col-lg-6 mb-4";
-    productCard.innerHTML = `
-            <div class="card h-100">
-                <img src="${product.imagen}" class="card-img-top" alt="${product.nombreProducto
-      }">
-                <div class="card-body">
-                    <div class="card-content">
-                      <h5 class="card-title">${product.nombreProducto}</h5>
-                      <p class="card-text">${product.descripcion}</p>
-                      <p class="card-text"><strong>Precio:</strong> $${product.precio.toFixed(
-        2
-      )}</p>
-                    </div>
-                    <button onclick="addToCart(${product.idProducto
-      })" class="btn btn-secondary">Añadir al carrito</button>
-                </div>
-            </div>
-        `;
+    productCard.appendChild(FrollyProducts.createCard(product, addToCart));
     productList.appendChild(productCard);
   });
 }
@@ -57,6 +41,7 @@ function renderProducts() {
  */
 function addToCart(id) {
   const product = products.find((item) => item.idProducto === id);
+  if (!product) return;
   const itemInCart = cart.find((item) => item.idProducto === id);
 
   if (itemInCart) {
@@ -81,30 +66,41 @@ function removeFromCart(id) {
  */
 function renderCart() {
   const cartItems = document.getElementById('cart-items');
-  cartItems.innerHTML = ''; // Clear existing cart items
+  cartItems.replaceChildren();
   let total = 0;
 
   if (cart.length === 0) {
     // Show empty state message if cart is empty
-    cartItems.innerHTML = `
-            <div class="text-center py-4">
-                <p class="mb-0">Aún no has sumado nada al carrito. ¿Qué esperas para disfrutar de una hamburguesa única?</p>
-            </div>
-        `;
+    const empty = document.createElement('div');
+    empty.className = 'text-center py-4';
+    const message = document.createElement('p');
+    message.className = 'mb-0';
+    message.textContent = 'Aún no has sumado nada al carrito. ¿Qué esperas para disfrutar de una hamburguesa única?';
+    empty.append(message);
+    cartItems.append(empty);
   } else {
     // Render each item in the cart
     cart.forEach(item => {
       const cartItem = document.createElement('div');
       cartItem.className = 'list-group-item d-flex justify-content-between';
-      cartItem.innerHTML = `
-                <div class="item-in-cart">
-                    <div class="content-in-cart">
-                      <p><strong>${item.nombreProducto}</strong> (x${item.quantity})</p>
-                    </div> 
-                    <button onclick="removeFromCart(${item.idProducto})" class="btn btn-sm btn-danger">Eliminar</button>
-                </div>
-                <span>$${(item.precio * item.quantity).toFixed(2)}</span>
-            `;
+      const itemBody = document.createElement('div');
+      itemBody.className = 'item-in-cart';
+      const content = document.createElement('div');
+      content.className = 'content-in-cart';
+      const description = document.createElement('p');
+      const name = document.createElement('strong');
+      name.textContent = item.nombreProducto;
+      description.append(name, document.createTextNode(` (x${item.quantity})`));
+      content.append(description);
+      const remove = document.createElement('button');
+      remove.className = 'btn btn-sm btn-danger';
+      remove.type = 'button';
+      remove.textContent = 'Eliminar';
+      remove.addEventListener('click', () => removeFromCart(item.idProducto));
+      itemBody.append(content, remove);
+      const subtotal = document.createElement('span');
+      subtotal.textContent = `$${(item.precio * item.quantity).toFixed(2)}`;
+      cartItem.append(itemBody, subtotal);
       cartItems.appendChild(cartItem);
       total += item.precio * item.quantity;
     });

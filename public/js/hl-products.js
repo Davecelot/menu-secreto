@@ -3,35 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("public/data/burgers.json")
     .then((response) => response.json())
     .then((data) => {
-      const products = data;
+      const products = [...data];
       // Select 4 products randomly
       const selectedProducts = [];
-      while (selectedProducts.length < 4) {
+      while (selectedProducts.length < 4 && products.length > 0) {
         const randomIndex = Math.floor(Math.random() * products.length);
-        if (!selectedProducts.includes(products[randomIndex])) {
-          selectedProducts.push(products[randomIndex]);
-        }
+        selectedProducts.push(products.splice(randomIndex, 1)[0]);
       }
 
       // Render in the HTML
       selectedProducts.forEach((product, index) => {
-        document.getElementById(`product-card-${index + 1}`).innerHTML = `
-            <div class="card h-100">
-                <img src="${product.imagen}" class="card-img-top" alt="${
-          product.nombreProducto
-        }">
-                <div class="card-body">
-                    <div class="card-content">
-                      <h5 class="card-title">${product.nombreProducto}</h5>
-                      <p class="card-text">${product.descripcion}</p>
-                      <p class="card-text"><strong>Precio:</strong> $${product.precio.toFixed(
-                        2
-                      )}</p>
-                    </div>
-                    <a href="products.html" class="btn btn-secondary">Ir al carrito</a>
-                </div>
-            </div>
-          `;
+        document.getElementById(`product-card-${index + 1}`).replaceChildren(FrollyProducts.createCard(product));
       });
     })
     .catch((error) => console.error("Error al cargar los productos:", error));

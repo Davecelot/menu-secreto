@@ -17,3 +17,19 @@ Esta página está construida para las cátedras de Desarrollo II y Programació
 * Mauro Ancona.
 * Azul Trejomovich.
 * Diego Villarroel.
+
+## Pruebas de seguridad
+
+La página sigue siendo estática; Node solo se utiliza para las pruebas de navegador.
+Con Node 24.22.1 o superior:
+
+```bash
+npm ci
+npx playwright install chromium
+npm test
+```
+
+Si Chromium ya está instalado, se puede usar `CHROMIUM_BIN=/ruta/a/chromium npm test`.
+La prueba comprueba que nombres, descripciones e imágenes del catálogo no inyecten
+HTML o código, y que añadir y quitar productos conserve los totales del carrito.
+Las peticiones externas se bloquean en esta prueba para mantenerla local.
