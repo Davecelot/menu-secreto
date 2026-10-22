@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><base href="../"><title>Product rendering security regression</title></head>
+<body>
+  <div id="product-list"></div><div id="cart-items"></div><span id="total-price"></span>
+  <div id="purchase-alert" class="d-none"></div>
+  <div id="product-card-1"></div><div id="product-card-2"></div>
+  <div id="product-card-3"></div><div id="product-card-4"></div>
+  <script>
+    window.injected = false;
+    window.fixture = [
+      {idProducto: '1);window.injected=true;//', nombreProducto: '<img src=x onerror="window.injected=true">', descripcion: '<svg onload="window.injected=true"></svg>', precio: 8.5, imagen: 'https://tracker.example/product.jpg'},
+      {idProducto: 2, nombreProducto: 'Classic', descripcion: 'A normal burger', precio: 9, imagen: 'public/imgs/ham-cebolla.webp'},
+      {idProducto: 3, nombreProducto: 'Third', descripcion: 'Third burger', precio: 10, imagen: 'javascript:window.injected=true'},
+      {idProducto: 4, nombreProducto: 'Fourth', descripcion: 'Fourth burger', precio: 11, imagen: 'public/imgs/ham-bbq.webp'}
+    ];
+    window.fetch = async () => ({ok: true, json: async () => window.fixture});
+  </script>
+  <script src="public/js/product-view.js"></script>
+  <script src="public/js/cart.js"></script>
+  <script src="public/js/hl-products.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => setTimeout(() => {
+      try {
+        const assert = (condition, message) => { if (!condition) throw new Error(message); };
+        assert(!window.injected, 'catalog text executed as HTML');
+        assert(!document.querySelector('[onerror], [onload]'), 'catalog created active HTML attributes');
+        assert(!document.querySelector('[src^="https://tracker.example"], [src^="javascript:"]'), 'untrusted catalog image URL accepted');
+        const cards = document.querySelectorAll('#product-list .card');
+        assert(cards.length === 4, 'catalog products failed to render');
+        assert(cards[0].querySelector('.card-title').textContent === window.fixture[0].nombreProducto, 'product text was not preserved literally');
+        const add = cards[0].querySelector('button');
+        assert(!add.hasAttribute('onclick'), 'product identifier enters an executable handler');
+        add.click(); add.click();
+        assert(document.querySelector('#cart-items strong').textContent === window.fixture[0].nombreProducto, 'cart title was not preserved literally');
+        assert(document.querySelector('#total-price').textContent === '17.00', 'cart quantity or total regressed');
+        document.querySelector('#cart-items button').click();
+        assert(document.querySelector('#total-price').textContent === '0.00', 'cart removal regressed');
+        assert(document.querySelectorAll('[id^="product-card-"] .card').length === 4, 'highlighted products failed to render');
+        document.documentElement.dataset.testResult = 'pass';
+      } catch (error) {
+        document.documentElement.dataset.testResult = 'fail';
+        document.documentElement.dataset.testError = error.message;
+      }
+    }, 100));
+  </script>
+</body>
+</html>
